@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0
+apiversion: 2
+architectures: armeabi armeabi-v7a x86
+description: This module is meant to read values from sharedPrefernce of android.
+author: Harshal
+license: mScripts
+copyright: mScripts
+
+# these should not be edited
+name: androidkeychain
+moduleid: com.mscripts.androidkeychain
+guid: c6bd5486-e594-436d-ba4c-475b88867d65
+platform: android
+minsdk: 5.1.2.GA

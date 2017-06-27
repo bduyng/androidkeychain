@@ -1,0 +1,18 @@
+%define lookup-function-name lookupGeneratedInit
+%define class-name AndroidkeychainBindings
+%{
+
+#include <string.h>
+#include <v8.h>
+#include <KrollBindings.h>
+
+#include "com.mscripts.androidkeychain.ExampleProxy.h"
+#include "com.mscripts.androidkeychain.AndroidkeychainModule.h"
+
+
+%}
+struct titanium::bindings::BindEntry;
+%%
+com.mscripts.androidkeychain.ExampleProxy, ::com::mscripts::androidkeychain::androidkeychain::ExampleProxy::bindProxy, ::com::mscripts::androidkeychain::androidkeychain::ExampleProxy::dispose
+com.mscripts.androidkeychain.AndroidkeychainModule, ::com::mscripts::androidkeychain::AndroidkeychainModule::bindProxy, ::com::mscripts::androidkeychain::AndroidkeychainModule::dispose
+%%
